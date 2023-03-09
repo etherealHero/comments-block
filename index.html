@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="icons/css/fontello.css" />
+    <title>Comments</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comments">
+        <form class="form" name="comment" id="form">
+          <div class="form__row">
+            <input
+              class="form__name"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
+            <input class="form__date" type="date" name="date" />
+          </div>
+          <textarea
+            class="form__text"
+            name="text"
+            rows="7"
+            id=""
+            placeholder="Написать комментарий"
+          ></textarea>
+          <input
+            class="form__submit"
+            type="submit"
+            name="submitbtn"
+            value="Добавить комментарий"
+          />
+        </form>
+        <div class="comments__inner">
+          <div class="comment">
+            <div class="comment__logo">А</div>
+            <span class="comment__name">AYAZ</span>
+            <span class="comment__date">Вчера, 17:27</span>
+            <p class="comment__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              tempore nulla debitis inventore eveniet in excepturi? Consectetur
+              dolore harum perspiciatis.
+            </p>
+            <div class="comment__flex">
+              <a class="comment__like" href="#">
+                <i class="demo-icon icon-heart"></i>
+                Мне нравится
+              </a>
+              <a class="comment__remove" title="Удалить комментарий" href="#">
+                <i class="demo-icon icon-trash"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
